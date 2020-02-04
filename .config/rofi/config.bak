@@ -1,0 +1,4 @@
+rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
+rofi.font: Terminus 11
+rofi.width: 30
+rofi.lines: 10
