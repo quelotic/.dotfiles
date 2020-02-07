@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+wp_path=/home/quelotic/wallpapers/
+image=$(ls $wp_path | grep -E '(jpg|png)$' | sort -R | tail -1)
+
+#if [ "$(id -u)" -eq 0 ]; then
+#    exec sudo -H -u quelotic $0 "$@"
+#fi
+
+wpg -s $image
+betterlockscreen -u $wp_path/$image
